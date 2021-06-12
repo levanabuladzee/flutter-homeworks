@@ -46,7 +46,7 @@ class _EditScreenState extends State<EditScreen> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: TextFormField(
-                    textCapitalization: TextCapitalization.words,
+                    textCapitalization: TextCapitalization.sentences,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return "Please enter valid title";
@@ -97,7 +97,7 @@ class _EditScreenState extends State<EditScreen> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: TextFormField(
-                    textCapitalization: TextCapitalization.words,
+                    textCapitalization: TextCapitalization.sentences,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return "Please enter valid description";
