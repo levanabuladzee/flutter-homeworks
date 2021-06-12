@@ -40,10 +40,13 @@ class _LoginScreenState extends State<LoginScreen> {
                       return null;
                     },
                     controller: _textEditingController,
-                    decoration: InputDecoration(icon: Icon(Icons.account_box), hintText: "Enter ID"),
+                    decoration: InputDecoration(
+                        icon: Icon(Icons.account_box), hintText: "Enter ID"),
                   ),
                 ),
-                SizedBox(height: 20,),
+                SizedBox(
+                  height: 20,
+                ),
                 Container(
                   width: double.infinity,
                   padding: EdgeInsets.all(10),

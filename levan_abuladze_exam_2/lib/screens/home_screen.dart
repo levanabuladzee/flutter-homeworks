@@ -64,7 +64,8 @@ class HomeScreen extends StatelessWidget {
                 }
 
                 if (snapshot.hasData || snapshot.data != null) {
-                  Provider.of<ExpenseRepository>(context, listen: false).getTotalExpenses();
+                  Provider.of<ExpenseRepository>(context, listen: false)
+                      .getTotalExpenses();
                   return ListView.builder(
                       itemBuilder: (context, index) => Card(
                             child: ListTile(
@@ -72,7 +73,8 @@ class HomeScreen extends StatelessWidget {
                                   Text(snapshot.data!.docs[index].get("title")),
                               subtitle: Text(snapshot.data!.docs[index]
                                   .get("description")),
-                              trailing: Text("${snapshot.data!.docs[index].get("expenseAmount")!.toStringAsFixed(2)}\$"),
+                              trailing: Text(
+                                  "${snapshot.data!.docs[index].get("expenseAmount")!.toStringAsFixed(2)}\$"),
                               onTap: () {
                                 Expense expense = Expense(
                                     title:

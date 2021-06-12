@@ -8,9 +8,11 @@ class Database {
   static String? uid;
 
   static Future<void> addExpense({required Expense expense}) async {
-    DocumentReference documentReference = _collectionReference.doc(uid).collection("expenses").doc();
+    DocumentReference documentReference = _collectionReference.doc(uid)
+        .collection("expenses")
+        .doc();
 
-    var data = <String, dynamic> {
+    var data = <String, dynamic>{
       "title": expense.title,
       "expenseAmount": expense.expenseAmount,
       "description": expense.description
@@ -23,7 +25,8 @@ class Database {
   }
 
   static Future<QuerySnapshot> readExpenses() async {
-    CollectionReference expensesReference = _collectionReference.doc(uid).collection("expenses");
+    CollectionReference expensesReference = _collectionReference.doc(uid)
+        .collection("expenses");
     return expensesReference.get();
   }
 
@@ -37,14 +40,18 @@ class Database {
   }
 
   static Stream<QuerySnapshot> readExpensesAsStream() {
-    CollectionReference expensesReference = _collectionReference.doc(uid).collection("expenses");
+    CollectionReference expensesReference = _collectionReference.doc(uid)
+        .collection("expenses");
     return expensesReference.snapshots();
   }
 
-  static Future<void> updateExpense({required String? docId, required Expense expense}) async {
-    DocumentReference documentReference = _collectionReference.doc(uid).collection("expenses").doc(docId);
+  static Future<void> updateExpense(
+      {required String? docId, required Expense expense}) async {
+    DocumentReference documentReference = _collectionReference.doc(uid)
+        .collection("expenses")
+        .doc(docId);
 
-    var data = <String, dynamic> {
+    var data = <String, dynamic>{
       "title": expense.title,
       "expenseAmount": expense.expenseAmount,
       "description": expense.description
@@ -57,7 +64,9 @@ class Database {
   }
 
   static Future<void> deleteExpense({required String docId}) async {
-    DocumentReference documentReference = _collectionReference.doc(uid).collection("expenses").doc(docId);
+    DocumentReference documentReference = _collectionReference.doc(uid)
+        .collection("expenses")
+        .doc(docId);
 
     await documentReference
         .delete()

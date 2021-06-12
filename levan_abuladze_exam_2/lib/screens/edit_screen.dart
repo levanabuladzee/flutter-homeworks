@@ -23,8 +23,10 @@ class _EditScreenState extends State<EditScreen> {
     final expense = ModalRoute.of(context)!.settings.arguments as Expense;
 
     expensesTitleController = TextEditingController(text: expense.title);
-    expensesAmountController = TextEditingController(text: expense.expenseAmount!.toStringAsFixed(2));
-    expensesDescriptionController = TextEditingController(text: expense.description);
+    expensesAmountController =
+        TextEditingController(text: expense.expenseAmount!.toStringAsFixed(2));
+    expensesDescriptionController =
+        TextEditingController(text: expense.description);
 
     return Scaffold(
       appBar: AppBar(
@@ -126,10 +128,11 @@ class _EditScreenState extends State<EditScreen> {
                         Expense editedExpense = Expense(
                           title: expensesTitleController.text,
                           expenseAmount:
-                          double.tryParse(expensesAmountController.text),
+                              double.tryParse(expensesAmountController.text),
                           description: expensesDescriptionController.text,
                         );
-                        Database.updateExpense(docId: expense.docId, expense: editedExpense);
+                        Database.updateExpense(
+                            docId: expense.docId, expense: editedExpense);
                         Navigator.pop(context);
                       }
                     },
