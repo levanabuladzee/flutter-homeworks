@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "106315075298",
+    "project_id": "personal-expenses-b88ad",
+    "storage_bucket": "personal-expenses-b88ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106315075298:android:abc374bf9e3019d65e18bb",
+        "android_client_info": {
+          "package_name": "ge.edu.btu.levan_abuladze_exam_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106315075298-0ujae01n72p6b6589c0dr11p64euq2t6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwC0brEH48sGj1HDkJSxTgB2seQB_LswU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106315075298-0ujae01n72p6b6589c0dr11p64euq2t6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
