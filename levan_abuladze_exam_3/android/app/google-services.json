@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "343618833678",
+    "project_id": "todo-app-42358",
+    "storage_bucket": "todo-app-42358.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343618833678:android:151240321387f721749b5f",
+        "android_client_info": {
+          "package_name": "ge.edu.btu.levan_abuladze_exam_3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343618833678-1usqivlv2i0a0c0jfdbh947hbctip68a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFzPMro9ZFJ7ENLrQBbjNdBNP5bYXCUek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343618833678-1usqivlv2i0a0c0jfdbh947hbctip68a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
